@@ -1,0 +1,22 @@
+uuid: 27eb2ce6-e871-452f-80a6-ac1d23eeabf3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - spec
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: spec_messages
+theme: spec
+region: sidebar
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

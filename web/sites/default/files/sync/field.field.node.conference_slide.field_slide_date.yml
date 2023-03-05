@@ -1,0 +1,21 @@
+uuid: cc6cd113-c814-456f-a6b0-88a99318680a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slide_date
+    - node.type.conference_slide
+  module:
+    - datetime
+id: node.conference_slide.field_slide_date
+field_name: field_slide_date
+entity_type: node
+bundle: conference_slide
+label: 'Slide Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

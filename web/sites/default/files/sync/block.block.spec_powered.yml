@@ -1,0 +1,22 @@
+uuid: 44bdf465-dcab-4eba-ad92-a33a15caea70
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - spec
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: spec_powered
+theme: spec
+region: footer
+weight: 2
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

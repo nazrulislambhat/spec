@@ -1,0 +1,20 @@
+uuid: c64680d7-d6f1-4a45-bcf1-495dd9d2b312
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_slide_date
+field_name: field_slide_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

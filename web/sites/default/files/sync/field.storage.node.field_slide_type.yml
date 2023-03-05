@@ -1,0 +1,33 @@
+uuid: ee082736-f3cf-46ac-9101-eba25e851d66
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_slide_type
+field_name: field_slide_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Technology
+      label: Technology
+    -
+      value: Conference
+      label: Conference
+    -
+      value: Management
+      label: Management
+    -
+      value: Leadership
+      label: Leadership
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

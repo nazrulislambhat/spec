@@ -1,0 +1,20 @@
+uuid: 2ddeddaa-d947-4e27-b197-b3a387cef4cd
+langcode: en
+status: false
+dependencies:
+  theme:
+    - spec
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: spec_primary_admin_actions
+theme: spec
+region: footer
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

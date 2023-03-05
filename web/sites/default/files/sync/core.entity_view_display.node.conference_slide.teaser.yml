@@ -1,0 +1,38 @@
+uuid: a30f53b0-ad89-4bd1-b69c-7316837bd168
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.conference_slide.field_slide_date
+    - field.field.node.conference_slide.field_slide_download
+    - field.field.node.conference_slide.field_slide_favourite
+    - field.field.node.conference_slide.field_slide_image
+    - field.field.node.conference_slide.field_slide_location
+    - field.field.node.conference_slide.field_slide_share
+    - field.field.node.conference_slide.field_slide_share_details
+    - field.field.node.conference_slide.field_slide_title
+    - field.field.node.conference_slide.field_slide_type
+    - node.type.conference_slide
+  module:
+    - user
+id: node.conference_slide.teaser
+targetEntityType: node
+bundle: conference_slide
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_slide_date: true
+  field_slide_download: true
+  field_slide_favourite: true
+  field_slide_image: true
+  field_slide_location: true
+  field_slide_share: true
+  field_slide_share_details: true
+  field_slide_title: true
+  field_slide_type: true

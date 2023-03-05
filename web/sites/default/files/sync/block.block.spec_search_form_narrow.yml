@@ -1,0 +1,23 @@
+uuid: beb8bd23-fc33-4fbb-8559-a1bf6424f29a
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - spec
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: spec_search_form_narrow
+theme: spec
+region: footer
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

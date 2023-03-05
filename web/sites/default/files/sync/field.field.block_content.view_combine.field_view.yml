@@ -1,0 +1,23 @@
+uuid: fa65c36a-7798-484b-862b-fc67c9a3be9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.view_combine
+    - field.storage.block_content.field_view
+id: block_content.view_combine.field_view
+field_name: field_view
+entity_type: block_content
+bundle: view_combine
+label: View
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

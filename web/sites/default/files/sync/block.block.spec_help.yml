@@ -1,0 +1,22 @@
+uuid: 00019e6a-c7fd-4a33-b2a8-4a6e095d0348
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - spec
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: spec_help
+theme: spec
+region: footer
+weight: 1
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 4be500e2-41bf-4c8a-ad9c-9f4ce9647a00
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.view_combine
+    - field.field.block_content.view_combine.field_view
+id: block_content.view_combine.default
+targetEntityType: block_content
+bundle: view_combine
+mode: default
+content:
+  field_view:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

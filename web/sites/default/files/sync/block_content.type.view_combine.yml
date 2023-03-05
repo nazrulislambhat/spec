@@ -1,0 +1,8 @@
+uuid: fa529037-2903-4b3d-9e6d-93bdd09e9496
+langcode: en
+status: true
+dependencies: {  }
+id: view_combine
+label: 'View Combine'
+revision: 0
+description: ''

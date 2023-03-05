@@ -1,0 +1,21 @@
+uuid: 02013c98-91ff-4ef5-8aa5-82d225d8f080
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slide_location
+    - node.type.conference_slide
+  module:
+    - text
+id: node.conference_slide.field_slide_location
+field_name: field_slide_location
+entity_type: node
+bundle: conference_slide
+label: 'Slide Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
