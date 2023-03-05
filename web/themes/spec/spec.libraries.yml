@@ -11,3 +11,13 @@ global:
 #   css:
 #     theme:
 #       dist/components/tailwind.css: {}
+
+conference-slider:
+  css:
+    theme:
+      dist/components/conference-slider.css: {}
+
+conference-slide:
+  css:
+    theme:
+      dist/components/conference-slide.css: {}
