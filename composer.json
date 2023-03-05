@@ -19,6 +19,8 @@
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
+        "drupal/quick_node_clone": "^1.15",
+        "drupal/views_slideshow": "^5.0",
         "drush/drush": "^11.5"
     },
     "conflict": {
