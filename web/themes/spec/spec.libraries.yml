@@ -15,7 +15,7 @@ global:
 conference-slider:
   css:
     theme:
-      dist/components/organisms/conference-slide.css: {}
+      dist/components/organisms/conference-slider.css: {}
 
 conference-slide:
   css:

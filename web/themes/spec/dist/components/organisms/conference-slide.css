@@ -5,12 +5,21 @@
           box-shadow: 1px 0px 5px grey;
   width: 400px;
   cursor: pointer;
-  margin: 50px;
+  margin: 20px;
+}
+
+.conference-slide:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .conference-slide:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .conference-slide:hover .slide-footer {

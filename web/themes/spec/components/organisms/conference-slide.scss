@@ -4,9 +4,14 @@
   box-shadow: 1px 0px 5px grey;
   width: 400px;
   cursor: pointer;
-  margin: 50px;
+  margin: 20px;
+  &:active {
+    transform: scale(1.1);
+    transition: 1s;
+  }
   &:hover {
     transform: scale(1.1);
+    transition: 1s;
     .slide-footer {
       display: flex;
     }
