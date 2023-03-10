@@ -13,8 +13,7 @@ regions:
 
 libraries:
   - core/normalize
-  # - spec/global
-  # - spec/tailwind
+  - flexslider
 
 components:
   namespaces:

@@ -6,7 +6,6 @@ global:
     dist/components/main.js:
       attributes:
         type: module
-
 # tailwind:
 #   css:
 #     theme:
@@ -21,3 +20,11 @@ conference-slide:
   css:
     theme:
       dist/components/organisms/conference-slide.css: {}
+
+flexslider:
+  css:
+    theme:
+      flexslider/flexslider.css: {}
+  js:
+    flexslider/jquery.flexslider-min.js: {}
+    flexslider/jquery.flexslider.js: {}

@@ -1,7 +1,13 @@
 .conference-slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 80px;
-  background-color: palegoldenrod;
+  div {
+    .flexslider {
+      .slides {
+        min-height: 512px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+      }
+    }
+  }
 }
