@@ -70,18 +70,19 @@
 {{ attach_library('spec/conference-slide') }}
 <article{{ attributes.addClass('conference-slide') }}>
   <div{{ content_attributes }}>
-    <div class="slide-image">{{content.field_slide_image }}</div>
+    <div class="slide-price">{{ content.field_slide_price }}</div>
+    <div class="slide-image">{{ content.field_slide_image }}</div>
     <div class="slide-body">
-      <div class="slide-title">{{content.field_slide_title }}</div>
-      <div class="slide-type">{{content.field_slide_type }}</div>
-      <div class="slide-date">{{content.field_slide_date }}</div>
-      <div class="slide-location">{{content.field_slide_location }}</div>
+      <div class="slide-title">{{ content.field_slide_title }}</div>
+      <div class="slide-type">{{ content.field_slide_type }}</div>
+      <div class="slide-date">{{ content.field_slide_date }}</div>
+      <div class="slide-location">{{ content.field_slide_location }}</div>
     </div>
     <div class="slide-footer">
-      <div class="slide-favourite">{{content.field_slide_favourite }}</div>
-      <div class="slide-download">{{content.field_slide_download }}</div>
-      <div class="slide-share">{{content.field_slide_share }}</div>
-      <div class="slide-share-details">{{content.field_slide_share_details }}</div>
+      <div class="slide-favourite">{{ content.field_slide_favourite }}</div>
+      <div class="slide-download">{{ content.field_slide_download }}</div>
+      <div class="slide-share">{{ content.field_slide_share }}</div>
+      <div class="slide-share-details">{{ content.field_slide_share_details }}</div>
     </div>
   </div>
 </article>

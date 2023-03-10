@@ -1,5 +1,22 @@
+.flexslider {
+  border: none;
+  padding: 0rem 15rem;
+  background-color: #fcfff7;
+  .flex-viewport {
+    .slides {
+      min-height: 512px;
+      max-height: 100vh;
+      width: 100%;
+      display: block;
+      list-style: none;
+      li {
+        width: initial !important;
+        max-width: calc(100vw / 3);
+      }
+    }
+  }
+}
 .conference-slider {
-  background-color: palegoldenrod;
   padding: 40px 20px;
   header {
     display: flex;
@@ -8,22 +25,79 @@
     align-items: center;
     h2 {
       font-size: 3rem;
-      margin: 10px auto;
+      margin-bottom: 10px;
     }
     p {
       font-size: 2rem;
-      margin: 10px auto;
+      color: grey;
+      margin-bottom: 50px;
+      margin-top: 10px;
     }
   }
-  div {
-    .flexslider {
-      .slides {
-        min-height: 512px;
-        max-height: 100vh;
-        width: 100%;
+}
+.quicktabs-wrapper {
+  .quicktabs-main {
+    .quicktabs-tabpage {
+      border: none;
+      padding: 2.5rem 1.5rem;
+    }
+  }
+  .quicktabs-tabs {
+    .slider-tabs {
+      border-bottom: 2px solid #1a8fe3;
+      a {
+        background: none;
+        border: none;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 1.5em;
+        color: #1a8fe3;
+      }
+    }
+    .active {
+      a {
+        background: none;
+        border: none;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 2em;
+        color: black;
         display: flex;
-        justify-content: flex-start;
-        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &::after {
+          content: '';
+          border-left: 2px solid #1a8fe3;
+          border-bottom: 2px solid #1a8fe3;
+          width: 15px;
+          height: 15px;
+          transform: rotate(-45deg);
+          position: absolute;
+          top: 90%;
+        }
+        &::before {
+          content: '';
+          border-bottom: 2px solid #fcfff7;
+          width: 21px;
+          height: 15px;
+          position: absolute;
+          bottom: -2px;
+        }
+        // &::after {
+        //   content: '';
+        //   background-image: url(../../../images/icons8-down-arrow-64.png);
+        //   background-position: center;
+        //   background-repeat: no-repeat;
+        //   background-size: contain;
+        //   width: 24px;
+        //   height: 15px;
+        //   position: absolute;
+        //   top: 100%;
+        //   display: block;
+        //   border-top: 2px solid #fcfff7;
+        // }
       }
     }
   }

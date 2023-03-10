@@ -1,5 +1,23 @@
+.flexslider {
+  border: none;
+  padding: 0rem 15rem;
+  background-color: #fcfff7;
+}
+
+.flexslider .flex-viewport .slides {
+  min-height: 512px;
+  max-height: 100vh;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.flexslider .flex-viewport .slides li {
+  width: initial !important;
+  max-width: 33.3333333333vw;
+}
+
 .conference-slider {
-  background-color: palegoldenrod;
   padding: 40px 20px;
 }
 
@@ -21,24 +39,75 @@
 
 .conference-slider header h2 {
   font-size: 3rem;
-  margin: 10px auto;
+  margin-bottom: 10px;
 }
 
 .conference-slider header p {
   font-size: 2rem;
-  margin: 10px auto;
+  color: grey;
+  margin-bottom: 50px;
+  margin-top: 10px;
 }
 
-.conference-slider div .flexslider .slides {
-  min-height: 512px;
-  max-height: 100vh;
-  width: 100%;
+.quicktabs-wrapper .quicktabs-main .quicktabs-tabpage {
+  border: none;
+  padding: 2.5rem 1.5rem;
+}
+
+.quicktabs-wrapper .quicktabs-tabs .slider-tabs {
+  border-bottom: 2px solid #1a8fe3;
+}
+
+.quicktabs-wrapper .quicktabs-tabs .slider-tabs a {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #1a8fe3;
+}
+
+.quicktabs-wrapper .quicktabs-tabs .active a {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 2em;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.quicktabs-wrapper .quicktabs-tabs .active a::after {
+  content: "";
+  border-left: 2px solid #1a8fe3;
+  border-bottom: 2px solid #1a8fe3;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 90%;
+}
+
+.quicktabs-wrapper .quicktabs-tabs .active a::before {
+  content: "";
+  border-bottom: 2px solid #fcfff7;
+  width: 21px;
+  height: 15px;
+  position: absolute;
+  bottom: -2px;
 }
 /*# sourceMappingURL=../../maps/organisms/conference-slider.css.map */

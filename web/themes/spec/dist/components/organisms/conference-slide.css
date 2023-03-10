@@ -5,6 +5,7 @@
           box-shadow: 1px 0px 5px grey;
   width: 400px;
   cursor: pointer;
+  position: relative;
   margin: 20px;
 }
 
@@ -16,10 +17,10 @@
 }
 
 .conference-slide:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
 .conference-slide:hover .slide-footer {
@@ -28,11 +29,39 @@
   display: flex;
 }
 
+.conference-slide .slide-price {
+  background: none;
+  padding: 8px 16px;
+  border: 2px solid #fcfff7;
+  border-radius: 5px;
+  position: absolute;
+  color: #fcfff7;
+  right: 10px;
+  top: 10px;
+  font-weight: 700;
+}
+
+.conference-slide .slide-image {
+  width: 100%;
+}
+
 .conference-slide .slide-image img {
   width: 100%;
   height: 200px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+}
+
+.conference-slide .slide-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 60px solid #78d370;
+  border-left: 60px solid transparent;
+  width: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .conference-slide .slide-title {
@@ -163,7 +192,7 @@
 }
 
 .slide-share-details {
-  color: blue;
+  color: #1a8fe3;
   font-size: 1rem;
   font-weight: 600;
   padding: 10px;
