@@ -20,6 +20,8 @@
  */
 #}
 {{ attach_library('spec/conference-slider') }}
+{{ attach_library('spec/flexslider') }}
+
 {% if context.list_style %}
   {%- set attributes = attributes.addClass('item-list__' ~ context.list_style) %}
 {% endif %}
@@ -31,7 +33,7 @@
   {%- if items -%}
     <{{ list_type }}{{ attributes }}>
       {%- for item in items -%}
-        <li{{ item.attributes }}>{{ item.value }}</li>
+        <li{{ item.attributes }}>{{  item.value }}</li>
       {%- endfor -%}
     </{{ list_type }}>
   {%- else -%}

@@ -1,7 +1,25 @@
 .flexslider {
   border: none;
-  padding: 0rem 15rem;
-  background-color: #fcfff7;
+  padding: 0rem 11rem;
+  background-color: #fff;
+}
+
+.flexslider .flex-control-paging {
+  margin-left: -200px;
+}
+
+.flexslider .flex-direction-nav .flex-nav-prev .flex-disabled,
+.flexslider .flex-direction-nav .flex-nav-prev a,
+.flexslider .flex-direction-nav .flex-nav-next .flex-disabled,
+.flexslider .flex-direction-nav .flex-nav-next a {
+  display: block !important;
+}
+
+.flexslider .flex-direction-nav .flex-nav-prev .flex-disabled::before,
+.flexslider .flex-direction-nav .flex-nav-prev a::before,
+.flexslider .flex-direction-nav .flex-nav-next .flex-disabled::before,
+.flexslider .flex-direction-nav .flex-nav-next a::before {
+  color: #1a8fe3;
 }
 
 .flexslider .flex-viewport .slides {
@@ -15,6 +33,36 @@
 .flexslider .flex-viewport .slides li {
   width: initial !important;
   max-width: 33.3333333333vw;
+}
+
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 20px;
+  color: grey;
+  font-size: 2rem;
+}
+
+.section-header p {
+  margin: 0;
+  padding-top: 0;
+  color: grey;
+  font-size: 1.2rem;
 }
 
 .conference-slider {
@@ -49,9 +97,17 @@
   margin-top: 10px;
 }
 
+.quicktabs-wrapper {
+  margin: 0 80px;
+}
+
 .quicktabs-wrapper .quicktabs-main .quicktabs-tabpage {
   border: none;
   padding: 2.5rem 1.5rem;
+}
+
+.quicktabs-wrapper .quicktabs-tabs {
+  margin-top: 60px !important;
 }
 
 .quicktabs-wrapper .quicktabs-tabs .slider-tabs {

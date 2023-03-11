@@ -64,6 +64,20 @@
           transform: rotate(-90deg);
 }
 
+.conference-slide .slide-image::after {
+  content: "";
+  background-image: url("../../../images/star.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 .conference-slide .slide-title {
   font-size: 1.2rem;
   line-height: 1.5rem;
