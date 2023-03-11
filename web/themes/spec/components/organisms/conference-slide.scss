@@ -1,18 +1,23 @@
+@import '../config.all';
 .conference-slide {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 1px 0px 5px grey;
-  width: 400px;
-  cursor: pointer;
-  position: relative;
-  margin: 20px;
+  @include breakpoint($mobile) {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 0px 5px grey;
+    width: 400px;
+    cursor: pointer;
+    position: relative;
+    margin: 20px;
+  }
   &:active {
     transform: scale(1.1);
     transition: 1s;
   }
   &:hover {
-    transform: scale(1.05);
-    transition: 400ms;
+    .slide-body {
+      transform: scale(0.97);
+      transition: 400ms;
+    }
     .slide-footer {
       display: flex;
     }
@@ -42,7 +47,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      //border-top-right-radius: 5px;
       border-top: 60px solid #78d370;
       border-left: 60px solid transparent;
       width: 0;

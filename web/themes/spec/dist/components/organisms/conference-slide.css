@@ -1,12 +1,14 @@
-.conference-slide {
-  background-color: #fff;
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 0px 5px grey;
-          box-shadow: 1px 0px 5px grey;
-  width: 400px;
-  cursor: pointer;
-  position: relative;
-  margin: 20px;
+@media (min-width: 320px) {
+  .conference-slide {
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0px 5px grey;
+            box-shadow: 1px 0px 5px grey;
+    width: 400px;
+    cursor: pointer;
+    position: relative;
+    margin: 20px;
+  }
 }
 
 .conference-slide:active {
@@ -16,9 +18,9 @@
   transition: 1s;
 }
 
-.conference-slide:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.conference-slide:hover .slide-body {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
   -webkit-transition: 400ms;
   transition: 400ms;
 }

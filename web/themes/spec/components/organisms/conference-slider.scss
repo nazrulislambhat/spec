@@ -1,9 +1,24 @@
+@import '../config.all';
 .flexslider {
-  border: none;
-  padding: 0rem 11rem;
-  background-color: #fff;
+  @include breakpoint($mobile) {
+    border: none;
+    background-color: #fff;
+    padding: 0rem 2rem;
+  }
+  @include breakpoint($upto-desktop) {
+    padding: 0rem 5rem;
+  }
+  @include breakpoint($desktop) {
+    padding: 0rem 10rem;
+  }
+
   .flex-control-paging {
-    margin-left: -200px;
+    @include breakpoint($mobile) {
+      margin-left: 0px;
+    }
+    @include breakpoint($desktop) {
+      margin-left: -200px;
+    }
   }
   .flex-direction-nav {
     .flex-nav-prev,
@@ -31,8 +46,21 @@
     }
   }
 }
+#featured-slider {
+  .slide-image {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 60px solid #1a8fe3;
+      border-left: 60px solid transparent;
+      width: 0;
+      transform: rotate(-90deg);
+    }
+  }
+}
 .section-header {
-  //background-color: red;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -48,7 +76,6 @@
   p {
     margin: 0;
     padding-top: 0;
-    //padding-bottom: 50px;
     color: grey;
     font-size: 1.2rem;
   }
@@ -73,15 +100,32 @@
   }
 }
 .quicktabs-wrapper {
-  margin: 0 80px;
+  @include breakpoint($mobile) {
+    margin: 0 10px;
+  }
+  @include breakpoint($desktop) {
+    margin: 0 80px;
+  }
+
   .quicktabs-main {
     .quicktabs-tabpage {
       border: none;
       padding: 2.5rem 1.5rem;
+      @include breakpoint($mobile) {
+        padding: 1rem 1.5rem;
+      }
+      @include breakpoint($desktop) {
+        padding: 2.5rem 1.5rem;
+      }
     }
   }
   .quicktabs-tabs {
-    margin-top: 60px !important;
+    @include breakpoint($mobile) {
+      margin-top: 20px !important;
+    }
+    @include breakpoint($desktop) {
+      margin-top: 60px !important;
+    }
     .slider-tabs {
       border-bottom: 2px solid #1a8fe3;
       a {
@@ -89,17 +133,27 @@
         border: none;
         padding: 10px;
         font-weight: 700;
-        font-size: 1.5em;
         color: #1a8fe3;
+        @include breakpoint($mobile) {
+          font-size: 1.2em;
+        }
+        @include breakpoint($desktop) {
+          font-size: 1.5em;
+        }
       }
     }
     .active {
       a {
+        @include breakpoint($mobile) {
+          font-size: 1.5em;
+        }
+        @include breakpoint($desktop) {
+          font-size: 2em;
+        }
         background: none;
         border: none;
         padding: 10px;
         font-weight: 700;
-        font-size: 2em;
         color: black;
         display: flex;
         flex-direction: column;
@@ -124,19 +178,6 @@
           position: absolute;
           bottom: -2px;
         }
-        // &::after {
-        //   content: '';
-        //   background-image: url(../../../images/icons8-down-arrow-64.png);
-        //   background-position: center;
-        //   background-repeat: no-repeat;
-        //   background-size: contain;
-        //   width: 24px;
-        //   height: 15px;
-        //   position: absolute;
-        //   top: 100%;
-        //   display: block;
-        //   border-top: 2px solid #fcfff7;
-        // }
       }
     }
   }
