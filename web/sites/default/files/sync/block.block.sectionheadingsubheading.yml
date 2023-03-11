@@ -1,0 +1,25 @@
+uuid: d9ae7625-5b80-4bd9-9578-e0e53896895e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:455f54a7-45c5-4741-a314-418dc44bdf8f'
+  module:
+    - block_content
+  theme:
+    - spec
+id: sectionheadingsubheading
+theme: spec
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:455f54a7-45c5-4741-a314-418dc44bdf8f'
+settings:
+  id: 'block_content:455f54a7-45c5-4741-a314-418dc44bdf8f'
+  label: 'Section Heading & Sub Heading'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

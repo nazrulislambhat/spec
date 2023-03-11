@@ -1,0 +1,47 @@
+uuid: b8166b58-5335-4140-94fb-55e26157e9c7
+langcode: en
+status: true
+dependencies: {  }
+id: conference_slider
+label: 'Conference Slider'
+options:
+  animation: slide
+  animationSpeed: 600
+  direction: horizontal
+  slideshow: false
+  easing: swing
+  smoothHeight: false
+  reverse: false
+  slideshowSpeed: 700
+  animationLoop: true
+  randomize: true
+  startAt: 0
+  itemWidth: 400
+  itemMargin: 0
+  minItems: 3
+  maxItems: 3
+  move: 1
+  directionNav: true
+  controlNav: '1'
+  thumbCaptions: false
+  thumbCaptionsBoth: false
+  keyboard: true
+  multipleKeyboard: false
+  mousewheel: false
+  touch: false
+  prevText: Previous
+  nextText: Next
+  namespace: flex-
+  selector: '.slides > li'
+  sync: ''
+  asNavFor: ''
+  initDelay: 0
+  useCSS: true
+  video: false
+  pausePlay: false
+  pauseText: Pause
+  playText: Play
+  pauseOnAction: true
+  pauseOnHover: false
+  controlsContainer: ''
+  manualControls: ''

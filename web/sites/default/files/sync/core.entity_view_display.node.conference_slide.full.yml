@@ -1,8 +1,9 @@
-uuid: 1f9e2df6-8eeb-47a9-89e9-11559c53fdfe
+uuid: fe91543e-7cb0-4c8b-8c51-17a4308c28cb
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.conference_slide.field_slide_date
     - field.field.node.conference_slide.field_slide_download
     - field.field.node.conference_slide.field_slide_favourite
@@ -21,10 +22,10 @@ dependencies:
     - options
     - text
     - user
-id: node.conference_slide.default
+id: node.conference_slide.full
 targetEntityType: node
 bundle: conference_slide
-mode: default
+mode: full
 content:
   field_slide_date:
     type: datetime_custom

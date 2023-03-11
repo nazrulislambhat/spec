@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.conference_slide.field_slide_favourite
     - field.field.node.conference_slide.field_slide_image
     - field.field.node.conference_slide.field_slide_location
+    - field.field.node.conference_slide.field_slide_price
     - field.field.node.conference_slide.field_slide_share
     - field.field.node.conference_slide.field_slide_share_details
     - field.field.node.conference_slide.field_slide_title
@@ -64,6 +65,14 @@ content:
   field_slide_location:
     type: text_textfield
     weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_slide_price:
+    type: string_textfield
+    weight: 26
     region: content
     settings:
       size: 60

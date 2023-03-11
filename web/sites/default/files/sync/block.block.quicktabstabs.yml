@@ -1,0 +1,20 @@
+uuid: 1aaaacc9-b62f-4bad-aa4b-c45751aeb8b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+  theme:
+    - spec
+id: quicktabstabs
+theme: spec
+region: content
+weight: 0
+provider: null
+plugin: 'quicktabs_block:tabs'
+settings:
+  id: 'quicktabs_block:tabs'
+  label: Tabs
+  label_display: '0'
+  provider: quicktabs
+visibility: {  }

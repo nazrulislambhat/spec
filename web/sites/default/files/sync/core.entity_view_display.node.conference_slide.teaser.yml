@@ -1,6 +1,6 @@
 uuid: a30f53b0-ad89-4bd1-b69c-7316837bd168
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.conference_slide.field_slide_favourite
     - field.field.node.conference_slide.field_slide_image
     - field.field.node.conference_slide.field_slide_location
+    - field.field.node.conference_slide.field_slide_price
     - field.field.node.conference_slide.field_slide_share
     - field.field.node.conference_slide.field_slide_share_details
     - field.field.node.conference_slide.field_slide_title
@@ -32,6 +33,7 @@ hidden:
   field_slide_favourite: true
   field_slide_image: true
   field_slide_location: true
+  field_slide_price: true
   field_slide_share: true
   field_slide_share_details: true
   field_slide_title: true
